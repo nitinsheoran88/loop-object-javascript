@@ -25,8 +25,8 @@ let products = [
         imageUrl: "https://rukminim2.flixcart.com/image/300/300/xif0q/headphone/r/r/4/-original-imaguggqedr3ypyx.jpeg?q=90",
     },
     {
-        name: "Apple AirPods Pro (2nd generation)",
-        price: 19999,
+        name: "Apple AirPods Pro (1st generation)",
+        price: 30999,
         color: "White",
         imageUrl: "https://rukminim2.flixcart.com/image/300/300/xif0q/headphone/e/a/f/-original-imagtc44nk4b3hfg.jpeg?q=90"
     },
@@ -46,7 +46,9 @@ products.forEach(function (item) {
 
     document.querySelector(".product-list").innerHTML += `
           <div class="product">
-              <img  src="${item.imageUrl}"/>
+                <div class="product-image">
+                    <img src="${item.imageUrl}"/>
+                </div>
               <h3>${item.name}</h3>
               <div class="price">Rs. ${item.price}</div>
               <button>Buy Now</button>
