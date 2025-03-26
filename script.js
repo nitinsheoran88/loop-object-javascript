@@ -43,7 +43,7 @@ let products = [
 
 products.forEach(function (item) {
     console.log(item.imageUrl);
-
+    
     document.querySelector(".product-list").innerHTML += `
           <div class="product">
                 <div class="product-image">
@@ -51,7 +51,8 @@ products.forEach(function (item) {
                 </div>
               <h3>${item.name}</h3>
               <div class="price">Rs. ${item.price}</div>
-              <button>Buy Now</button>
+              <button class="button">Buy Now</button>
+           
           </div>
       `;
 });
