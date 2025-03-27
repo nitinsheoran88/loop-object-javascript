@@ -56,3 +56,15 @@ products.forEach(function (item) {
           </div>
       `;
 });
+document.querySelectorAll('button').forEach(function (item) {
+    item.addEventListener('click', function () {
+        console.log('clicked', item)
+
+        document.querySelector('.popup').style.display = 'flex'
+
+        setTimeout(() => {
+            document.querySelector('.popup').style.display = 'none'
+        }, 5000);
+
+    })
+})
